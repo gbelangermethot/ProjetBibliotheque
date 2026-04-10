@@ -45,7 +45,7 @@ ProjetBibliothequeV4/
 ### Étape 1 : Cloner ou télécharger le projet
 Téléchargez le projet dans le répertoire de votre serveur web :
 ```bash
-git clone <url-du-repository>
+git clone https://github.com/gbelangermethot/ProjetBibliotheque
 cd ProjetBibliothequeV4
 ```
 

@@ -51,7 +51,7 @@ git clone https://github.com/gbelangermethot/ProjetBibliotheque
 ### Étape 2 : Créer la base de données
 1. Ouvrez **phpMyAdmin** ou votre client MySQL préféré
 2. Creer la base de données bibliotheque
-3. Importer le fighier bibliotheque.sql pour creer els tables et importer les données de test
+3. Importer le fighier bibliotheque.sql pour creer les tables et importer les données de test
 
 
 ### Étape 3 : Configurer la connexion à la base de données

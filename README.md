@@ -46,7 +46,6 @@ ProjetBibliothequeV4/
 Téléchargez le projet dans le répertoire de votre serveur web :
 ```bash
 git clone https://github.com/gbelangermethot/ProjetBibliotheque
-cd ProjetBibliotheque
 ```
 
 ### Étape 2 : Créer la base de données

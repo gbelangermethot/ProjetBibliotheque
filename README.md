@@ -51,16 +51,9 @@ cd ProjetBibliotheque
 
 ### Étape 2 : Créer la base de données
 1. Ouvrez **phpMyAdmin** ou votre client MySQL préféré
-2. Importez le fichier `bibliotheque.sql` pour créer automatiquement :
-   - La base de données `bibliotheque`
-   - Toutes les tables (`documents`, `utilisateurs`, `prets`, `reservations`)
-   - Les données d'exemple
-   - Les index et contraintes de clés étrangères
+2. Creer la base de données bibliotheque
+3. Importer le fighier bibliotheque.sql pour creer els tables et importer les données de test
 
-**Ou via la ligne de commande :**
-```bash
-mysql -u root -p < bibliotheque.sql
-```
 
 ### Étape 3 : Configurer la connexion à la base de données
 Modifiez les paramètres de connexion dans `login.php` :
@@ -101,12 +94,19 @@ Après l'installation, utilisez ces comptes de test :
    - **Réservations** (`reservations.php`) - Faire de nouvelles réservations de livres
    - **Nouvel emprunt** (`nouveauPret.php`) - Créer une nouvelle demande d'emprunt
 
-### Pour les administrateurs
-1. Se connecter avec un compte administrateur
-2. Accéder au tableau de bord administrateur (`admin.php`) pour :
-   - Gérer les utilisateurs
-   - Superviser les opérations de la bibliothèque
-   - Configurer les paramètres du système
+### Pour les Employés
+1. Se connecter avec un compte employé
+2. Accéder au tableau de employe (`admin.php`) pour :
+   - Créer et retourner des prèts
+   - Créer ou annuler des réservations
+   - Voir et filter tout les utilisateurs
+   - Voir et filter tout les prèts
+   - Voir et filter toutes les réservations
+
+### Pour les Administrateurs
+1. Toutes les opérations employés
+2. Creer de nouveaux employée en changeant le statut d'un utilisateur et lui donner les acces employés  
+3. Retirer les privilèges employés au utilisateurs employés et le retourné au statu de utilisateur par défaut  
 
 ## Captures d'écran
 

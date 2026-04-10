@@ -1,6 +1,6 @@
 <?php // login.php
   $host = 'localhost';           // Adresse du serveur MySQL
-  $data = 'bibliotheque';        // Nom de la base de données
+  $data = 'bibliothequeGit';        // Nom de la base de données
   $user = 'root';                // Utilisateur MySQL
   $pass = 'votre_mot_de_passe'; // Mot de passe MySQL
   $chrs = 'utf8mb4';             // Jeu de caractères

@@ -66,7 +66,7 @@ $chrs = 'utf8mb4';             // Jeu de caractères
 
 ### Étape 4 : Démarrer le serveur web
 - Assurez-vous que **Apache** (ou votre serveur web) et **MySQL** sont en cours d'exécution
-- Accédez à l'application via votre navigateur : `http://localhost/ProjetBibliothequeV4/`
+- Accédez à l'application via votre navigateur : `http://localhost/ProjetBibliotheque/`
 
 ### Comptes de test disponibles
 Après l'installation, utilisez ces comptes de test :

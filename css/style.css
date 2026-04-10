@@ -1,0 +1,181 @@
+body{
+    background-color: darkorchid;
+    
+}
+
+.menu {
+    background-color: #4B0082; /* indigo foncé */
+    padding: 10px 0;
+    position: fixed;      /* reste en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;     /* enlève les puces */
+    margin: 0;
+    padding: 0;
+    display: flex;        /* met les éléments en ligne */
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;     /*  bordure blanche */
+    padding: 8px 16px;            /* espace autour du texte */
+    transition: all 0.2s;
+}
+
+.menu a:hover {
+    color: #FFD700;        /* doré au survol */
+}
+
+/* texte accessible */
+.sr-only{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* Pour que le bouton et la liste soient sur la même ligne */
+.menu{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+
+/* Bouton hamburger caché en grand écran */
+.menu-toggle{
+  display:none;
+  background:transparent;
+  border:2px solid white;
+  color:white;
+  font-size:22px;
+  padding:6px 10px;
+  cursor:pointer;
+}
+
+@media (max-width: 840px){
+  .menu{
+    justify-content:space-between;
+    padding:10px 12px;
+    z-index:1000;
+  }
+
+  .menu-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* dropdown panel */
+  .menu ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;               /* hold on the left */
+    width:260px;          /* fixed panel width (adjust) */
+    background:#4B0082;
+    flex-direction:column;
+    align-items:stretch;  /* IMPORTANT: children fill width */
+    padding:8px 0;
+    border:1px solid white;
+    box-sizing:border-box;
+  }
+
+  .menu.open ul{
+    display:flex;
+  }
+
+  .menu li{
+    margin:0;             /* remove uneven spacing */
+    width:100%;
+  }
+
+  /* equal-size boxes */
+  .menu a{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    border:0;             /* optional: remove link border */
+    border-bottom:1px solid rgba(255,255,255,0.35);
+    padding:12px 14px;
+    text-align:left;      /* left aligned text */
+  }
+
+  .menu li:last-child a{
+    border-bottom:0;
+  }
+}
+
+.page{
+  text-align: center;
+  display: flex;
+  align-items: flex-start;     
+  justify-content: center;
+  min-height: 100vh;           
+  height: auto;
+  padding-top: 70px;           
+  box-sizing: border-box;
+}
+
+#titre{
+    font-size: 50px;
+    color: white;
+}
+
+.container{
+    display: inline-block;
+    color: white;
+    max-width: 100%;
+}
+
+.link{
+font-size: xx-large;
+background-color:blue;
+color: white;
+height: 100px;
+width: 200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+td{
+    padding: 5px;
+}
+
+table{
+    border: 1px solid white;
+}
+
+.list{
+   border: 1px solid white; 
+   padding: 5px;
+}
+
+.listRow:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.horizontal {
+    display: flex;         /* met les tables en ligne */
+    gap: 2rem;              /* espace entre les deux tables */
+    align-items: flex-start; /* aligne les tables en haut */
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
